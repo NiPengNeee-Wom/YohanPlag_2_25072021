@@ -2,7 +2,34 @@
 
 /* Paramettre de la page */
 
+#bloc_page
+{
+    width: auto;
+    margin: 1%;
+}
+
 /* Header */
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#navigation
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.logo
+{
+    display: flex;
+    flex-direction: column;
+}
 
 /* Section rechercher */
 

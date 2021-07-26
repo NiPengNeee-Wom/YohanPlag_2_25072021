@@ -1,46 +1,60 @@
-/* Paramettre du site */
+/* Parametre des polices */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+/* Parametre de la page */
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+}
+
+h2{
+    font-size: 1.1em;
+}
+
+#bloc_page{
+    margin-inline: 2%;
+}
 
 h2
 {
     font-weight: bold;
 }
 
-/* Paramettre de la page */
-
-#bloc_page
-{
-    width: auto;
-    margin: 1%;
-}
-
 /* Header */
 
-header
-{
+header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid red;
-
 }
 
-#navigation
-{
+#navigation{
+    width: 30%;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    padding-top: 20px;
 }
 
-#navigation>a
-{
-    margin-right: 10%;
+#logo{
+    padding-top: 10px;
 }
 
-.logo
-{
-    display: flex;
-    flex-direction: column;
+#navigation>a{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+#navigation>a:hover{
+    color: #0065FC;
+    border-top: 1px solid #0065FC;
+}
+
+#navigation>a:nth-child(3){
+    font-weight: bold;
+    color: #0065FC;
 }
 
 /* Section rechercher */

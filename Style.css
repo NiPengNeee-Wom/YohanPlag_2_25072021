@@ -6,20 +6,20 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.75em;
 }
 
 h2{
-    font-size: 1.1em;
-}
-
-#bloc_page{
-    margin-inline: 2%;
-}
-
-h2
-{
+    font-size: 1.2em;
     font-weight: bold;
+}
+
+h3{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
 }
 
 /* Header */
@@ -28,6 +28,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 30px;
 }
 
 #navigation{
@@ -61,7 +62,53 @@ header{
 
 #recherche
 {
+    display: flex;
+    flex-direction: column;
     border:1px solid red;
+    padding-left: 30px;
+}
+
+#recherche>h2{
+    height: 1px;
+}
+
+#recherche>p{
+    height: 10px;
+}
+
+#filtre{
+    display: flex;
+}
+
+#filtre>*{
+    margin-right: 25px;
+}
+
+#filtre>div{
+    display: flex;
+    align-items: center;
+}
+
+.icone_filtre{
+    margin-right: 12px;
+    margin-left: 12px;
+    border: 1px solid gray;
+    border-radius: 12px;;
+}
+
+.icone_filtre>i{
+    color: #0065FC;
+}
+
+#info{
+    display: flex;
+    align-items:  center;
+}
+
+#info>i{
+    color: #F2F2F2;
+    background-color: #0065FC;
+    margin-right: 10px;
 }
 
 /* Section Résultats */
@@ -82,5 +129,23 @@ header{
 
 footer
 {
-    border: 1px solid red;
+    display: flex;
+    background-color:#F2F2F2 ;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+Footer>*>a{
+    padding-bottom: 8px;
+    color: black;
+}
+
+Footer>*>a:hover{
+    color: #0065FC;
+}
+
+footer>*{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
 }

@@ -116,7 +116,23 @@ header{
 #resultats
 {
     border: 1px solid red;
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-between;
 }
+
+#liens_hebergement{
+    background-color:#F2F2F2;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+
+
+#liens_popularite{
+    background-color:#F2F2F2;
+    border-radius: 15px;
+}
+
 
 /* Section Activités */
 

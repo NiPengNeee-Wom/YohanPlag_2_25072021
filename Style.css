@@ -55,6 +55,7 @@ header{
     padding-right: 30px;
     text-decoration: none;
     text-align: center;
+    font-style: normal;
     flex: auto;
 }
 
@@ -89,8 +90,16 @@ header{
     display: flex;
     height: 30px;
     width: 300px;
-    border: 1px solid black;
+    border: 1px solid grey;
     border-radius: 5px 5px 5px 5px;
+}
+
+#barre_recherche>*{
+    flex: auto;
+}
+
+#barre_recherche>input{
+    border: hidden;
 }
 
  #barre_recherche>button{
@@ -165,28 +174,57 @@ header{
 
 #activites>div{
     margin-left: 30px;
+    margin-right: 30px;
 }
 
 #bloc_activites{
     display: flex;
-    border: 1px solid red;
     justify-content: space-between;
+    height: 400px;
 }
 
 #bloc_activites>*{
-    border: 1px solid red;
     width: 23%;
+}
+
+.sous_titre{
+    margin-left: 10px;
+    font-weight: bold;
 }
 
 .activites_seul{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    border: none;
     border-radius: 15px;
+    box-shadow:  0px 2px 5px grey;
+}
+
+.activites_double{
+    display: flex;
+    flex-direction: column;
+}
+
+.activites_double>*{
+    flex: auto;
+    border: 1px solid grey;
 }
 
 .activites_seul>*{
     flex: auto;
+}
+
+.activites_seul>img{
+    flex: 90%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#grande{
+    height: 65%;
+}
+
+#petite{
+    height: 35%;
 }
 
 /* Footer */

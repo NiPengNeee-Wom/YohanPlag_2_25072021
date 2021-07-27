@@ -145,13 +145,13 @@ header{
     padding-left: 10px;
 }
 
- #barre_recherche>button{
+#barre_recherche>button{
     border: hidden;
     flex:auto;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
     color: white;
- }
+}
 
 /* filtres */
 

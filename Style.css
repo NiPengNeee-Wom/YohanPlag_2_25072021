@@ -161,40 +161,31 @@ header{
 
 /* filtres */
 
-#filtre{
+#section_filtre{
     display: flex;
-    flex-flow: row;
-}
-
-#filtre>*{
-    margin-right: 25px;
-}
-
-#filtre>div{
-    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
+#titre_filtre{
+    margin-right: 25px;
+}
+
+
 .icone_filtre{
-    margin-right: 12px;
-    margin-left: 12px;
-    border: 1px solid gray;
-    border-radius: 12px;
-}
-
-.icone_filtre>i{
-    color: #0065FC;
-}
-
-#info{
     display: flex;
-    align-items:  center;
+    flex-direction: row;
+    border: 1px solid #F2F2F2;
+    margin-right: 25px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    
 }
 
-#info>i{
-    color: #F2F2F2;
-    background-color: #0065FC;
+.fa-info-circle{
     margin-right: 10px;
+    color: blue;
 }
 
 /* Section Résultats */
@@ -281,7 +272,7 @@ header{
     font-weight: bold;
     height: 30px;
     line-height: 30px;
-}
+    overflow: auto;}
 
 /* Activites double */
 

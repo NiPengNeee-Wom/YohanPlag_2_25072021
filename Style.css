@@ -6,16 +6,24 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    font-size: 0.75em;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+#bloc_page{
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: large;
 }
 
 h2{
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-h3{
-    font-size: 1em;
+    font-size: bold;
 }
 
 a{
@@ -32,7 +40,7 @@ header{
 }
 
 #navigation{
-    width: 30%;
+    width: 25%;
     display: flex;
     justify-content: flex-end;
 }
@@ -46,6 +54,8 @@ header{
     padding-left: 30px;
     padding-right: 30px;
     text-decoration: none;
+    text-align: center;
+    flex: auto;
 }
 
 #navigation>a:hover{
@@ -64,7 +74,6 @@ header{
 {
     display: flex;
     flex-direction: column;
-    border:1px solid red;
     padding-left: 30px;
 }
 
@@ -75,6 +84,19 @@ header{
 #recherche>p{
     height: 10px;
 }
+
+#barre_recherche{
+    display: flex;
+    height: 30px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+ #barre_recherche>button{
+     background-color: #0065FC;
+     color: #f2f2f2;
+ }
 
 #filtre{
     display: flex;
@@ -93,7 +115,7 @@ header{
     margin-right: 12px;
     margin-left: 12px;
     border: 1px solid gray;
-    border-radius: 12px;;
+    border-radius: 12px;
 }
 
 .icone_filtre>i{
@@ -139,6 +161,32 @@ header{
 #activites
 {
     border: 1px solid red;
+}
+
+#activites>div{
+    margin-left: 30px;
+}
+
+#bloc_activites{
+    display: flex;
+    border: 1px solid red;
+    justify-content: space-between;
+}
+
+#bloc_activites>*{
+    border: 1px solid red;
+    width: 23%;
+}
+
+.activites_seul{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.activites_seul>*{
+    flex: auto;
 }
 
 /* Footer */

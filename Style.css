@@ -29,6 +29,11 @@ h2{
     font-size: bold;
 }
 
+h3{
+    font-size: bold;
+    font-size: 0.8em;
+}
+
 a{
     text-decoration: none;
 }
@@ -119,6 +124,7 @@ header{
     height: 40px;
     width: 350px;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 #gps{

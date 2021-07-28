@@ -179,7 +179,7 @@ header{
     display: flex;
     justify-content: space-between;
     border-radius: 200px;
-    border: 4px #F2F2F2 solid;
+    border: 3px #F2F2F2 solid;
     cursor: pointer;
     height: 40px;
     position: relative;

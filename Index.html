@@ -12,29 +12,27 @@
 
     <body>
         <!--Corps de la page-->
-        <div id="bloc_page">
+        <div id="main_container">
             <!--Corps du site-->
             <header>
                 <!--En-Tête-->
                 <div id="logo">
-                    <!--Logo-->
                     <img src="./images/logo/Reservia.svg" alt="Reservia">
                 </div>
-                <nav id="navigation">
-                    <!--Lien de navigation-->
-                    <div class="liens_nav">
-                        <a href="#bloc_hebergement">Hébergements</a>
+                <nav id="nav">
+                    <div class="nav_link">
+                        <a href="#lodging_bloc">Hébergements</a>
                         <a href="#bloc_activites">Activités</a>
                     </div>
                     <a class="signUp" href="#">S'inscrire</a>
                 </nav>
             </header>
 
-            <section id="recherche">
-                <!--Section de recherche-->
+            <section id="search">
+                <!--Section rechercher-->
                 <h1>Trouvez votre hébergement pour les vacances de rêves</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-                <div id="barre_recherche">
+                <div id="search_bar">
                     <!--Barre de recherche-->
                     <div id="gps">
                         <i class="fas fa-map-marker-alt"></i>
@@ -42,62 +40,64 @@
                     <input type="search" placeholder="Marseille, France" name="search">
                     <button>Rechercher</button>
                 </div>
-                <div id="section_filtre">
-                    <!--Filtre de recherche-->
-                    <div id="titre_filtre">
-                        <h3>Filtres</h3>
-                    </div>
-                    <div class="icone_filtre">
-                        <i class="fas fa-heart"></i>
-                        <a href="#">Economique</a>
-                    </div>
-                    <div class="icone_filtre">
-                        <i class="fas fa-heart"></i>
-                        <a href="#">Familial</a>
-                    </div>
-                    <div class="icone_filtre">
-                        <i class="fas fa-heart"></i>
-                        <a href="#">Romantique</a>
-                    </div>
-                    <div class="icone_filtre">
-                        <i class="fas fa-dog"></i>
-                        <a href="#">Animaux autorisés</a>
+                <div id="filter_section">
+                    <!--section filtre-->
+                    <h3 id="filter_title">Filtres</h3>
+                    <div id="filter_bloc">
+                        <div class="filter_button">
+                            <i class="fas fa-money-bill-wave"></i>
+                            <p>Economique</p>
+                        </div>
+                        <div class="filter_button">
+                            <i class="fas fa-child"></i>
+                            <p>Familial</p>
+                        </div>
+                        <div class="filter_button">
+                            <i class="fas fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div class="filter_button">
+                            <i class="fas fa-dog"></i>
+                            <p>Animaux autorisés</p>
+                        </div>
                     </div>
                 </div>
-                <p id="info"><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponible dans cette ville</p>  <!--Changer couleur fond et i-->
-
+                <div id="info">
+                    <p><i class="fas fa-info"></i></p>
+                    <p id="info_text">Plus de 500 logements sont disponible dans cette ville</p>  <!--Changer couleur fond et i-->
+                </div>
             </section>
 
-            <section id="resultats">
-                <!--Section de resultat de recherche-->
-                <div id="bloc_hebergement">
+            <section id="result">
+                <!--Section de resultat-->
+                <div id="lodging_bloc">
                     <!--Resultats Hebergement-->
                     <h1>Hébergements à Marseille</h1>
-                    <div id="liens_hebergement">
-                       <div class="ligne_hebergement">
-                            <div id="box_hebergement">
+                    <div id="lodging_link">
+                       <div class="lodging_line">
+                            <div id="lodging_box">
                                 <img src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
                                 <p>Auberge de Cannebière</br>Nuit à partir de 25E</p>
                             </div>
-                            <div id="box_hebergement">
+                            <div id="lodging_box">
                                 <img src="" alt="Hôtel du port">
                                 <p>Hôtel du port</br>Nuit à partir de 52E</p>
                             </div>
-                            <div id="box_hebergement">
+                            <div id="lodging_box">
                                 <img src="" alt="Hôtel Les mouettes">
                                 <p>Hôtel Les mouettes</br>Nuit à partir de 76E</p>
                             </div>
                         </div>
-                        <div class="ligne_hebergement">
-                            <div id="box_hebergement">
+                        <div class="lodging_line">
+                            <div id="lodging_box">
                                 <img src="" alt="Hôtel de la mer">
                                 <p>Hôtel de la mer</br>Nuit à partir de 46E</p>
                             </div>
-                            <div id="box_hebergement">
+                            <div id="lodging_box">
                                 <img src="" alt="Auberge Le panier">
                                 <p>Auberge Le panier</br>Nuit à partir de 23E</p>
                             </div>
-                            <div id="box_hebergement">
+                            <div id="lodging_box">
                                 <img src="" alt="Hôtel chez Anima">
                                 <p>Hôtel chez Anima</br>Nuit à partir de 96E</p>
                             </div>
@@ -105,10 +105,10 @@
                     </div>
                     <button>Afficher plus</button> 
                 </div>
-                <div id="bloc_popularite">
-                    <!--Resultats Popularité-->
+                <div id="popularity_bloc">
+                    <!--section popularité-->
                     <h1>Les plus populaires</h1>
-                    <div id="liens_popularite">
+                    <div id="popularity_link">
                         <div>
                             <img src="" alt="Hôtel Le soleil du matin">
                             <p>Hôtel Le soleil du matin</p>
@@ -129,37 +129,37 @@
 
             </section>
 
-            <section id="activites">
+            <section id="activity">
                 <!--Section activités-->
-                <div id="liens_activites">
+                <div id="activity_link">
                     <h1>Activités à Marseille</h1>
-                    <div id="bloc_activites">
-                        <div class="activites_seul">
+                    <div id="activity_bloc">
+                        <div class="activity_1">
                             <img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
-                            <p class="sous_titre">Vieux Port</p>
+                            <p class="sub_title">Vieux Port</p>
                         </div>
-                        <div class="activites_double">
-                            <div id="grande">
-                                <img src="" alt="">
-                                <p class="sous_titre">Fort de Pomègues</p>
+                        <div class="activity_2">
+                            <div id="big">
+                                <img src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+                                <p class="sub_title">Fort de Pomègues</p>
                             </div>
-                            <div id="petite">
+                            <div id="small">
                                 <img src="" alt="">
-                                <p class="sous_titre">Iles du Frioul</p>
+                                <p class="sub_title">Iles du Frioul</p>
                             </div>
                         </div>
-                        <div class="activites_seul">
+                        <div class="activity_1">
                             <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
-                            <p class="sous_titre">Parc Nationale Des Calanques</p>
+                            <p class="sub_title">Parc Nationale Des Calanques</p>
                         </div>
-                        <div class="activites_double">
-                            <div  id="petite">
+                        <div class="activity_2">
+                            <div  id="small">
                                 <img src="" alt="">
-                                <p class="sous_titre">Notre-Dame-De-La-garde</p>
+                                <p class="sub_title">Notre-Dame-De-La-garde</p>
                             </div>
-                            <div id="grande">
+                            <div id="big">
                                 <img src="" alt="">
-                                <p class="sous_titre">Parc Longchamp</p>
+                                <p class="sub_title">Parc Longchamp</p>
                             </div>
                         </div>
 

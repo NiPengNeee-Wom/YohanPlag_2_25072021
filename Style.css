@@ -14,7 +14,7 @@ body{
     padding: 0;
 }
 
-#bloc_page{
+#main_container{
     max-width: 1350px;
     margin: auto;
     display: flex;
@@ -54,17 +54,17 @@ header{
     padding-top: 40px;
 }
 
-#navigation{
+#nav{
     width: 25%;
     display: flex;
     justify-content: flex-end;
 }
 
-.liens_nav{
+.nav_link{
     display: flex;
 }
 
-.liens_nav>a{
+.nav_link>a{
     padding: 30px 30px 0px 30px;
     text-decoration: none;
     text-align: center;
@@ -73,7 +73,7 @@ header{
     color: black;
 }
 
-#navigation>div>a:hover{
+#nav>div>a:hover{
     color: #0065FC;
     border-top: 1px solid #0065FC;
 }
@@ -94,7 +94,7 @@ header{
 
 /* Section rechercher */
 
-#recherche
+#search
 {
     display: flex;
     flex-direction: column;
@@ -102,18 +102,14 @@ header{
     padding-right: 30px;
 }
 
-#recherche>h1{
-    height: 1px;
-}
-
-#recherche>p{
+#search>p{
     display: block;
     height: 5px;
     line-height: 5px;
     padding-bottom: 10px;
 }
 
-#recherche>h1{
+#search>h1{
     display: block;
     height: 0px;
     line-height: 0px;
@@ -121,7 +117,7 @@ header{
 
 /* Barre de recherche */
 
-#barre_recherche{
+#search_bar{
     display: flex;
     height: 40px;
     width: 350px;
@@ -144,7 +140,7 @@ header{
     padding-top: 11px;
 }
 
-#barre_recherche>input{
+#search_bar>input{
     flex: auto;
     border: hidden;
     border-top: 1px solid #F2F2F2;
@@ -153,7 +149,7 @@ header{
     padding-left: 10px;
 }
 
-#barre_recherche>button{
+#search_bar>button{
     border: hidden;
     flex:auto;
     border-radius: 0px 15px 15px 0px;
@@ -161,55 +157,79 @@ header{
     color: white;
 }
 
-/* filtres */
+/* section filtre */
 
-#section_filtre{
+#filter_section{
     display: flex;
     flex-direction: row;
 }
 
-#titre_filtre{
-    margin-right: 25px;
+#filter_title{
+    margin-bottom: 20px;
+    padding-top: inherit;
+    padding-right: 20px;
 }
 
-
-.icone_filtre{
+#filter_bloc{
     display: flex;
-    flex-direction: row;
-    gap: 9px;
-    border: 2px solid #F2F2F2;
-    margin-right: 25px;
-    height: 30px;
-    border-radius: 15px;
-    font-size: 0.8em; 
+    flex-flow: row wrap;
 }
 
-.icone_filtre>a{
-    padding-top: 8px; 
-    margin-right: 10px;
+.filter_button{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 200px;
+    border: 2px #F2F2F2 solid;
+    cursor: pointer;
+    height: 40px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 16px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.filter_button>p{
     font-weight: bold;
-    color: black;
-    font-size: 0.8em;
-    gap: 9px;
+    font-size: 0.9em;
+    line-height: 11px;
 }
 
-.fa-info-circle{
-    margin-right: 10px;
-    color: blue;
-}
-
-.fa-dog,
-.fa-heart{
-    background-color: #DEEBFF;
-    width: 33px;
-    height: 33px;
-    border-radius: 50%;
+.filter_button>i{
+    line-height: 41px;
     color: #0065FC;
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    background: #DEEBFF;
+    left: -2px;
+    border-radius: 100%;;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-info{
+    border: 2px solid #F2F2F2;
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    color: #0065FC;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+
+#info_text{
+    line-height:36px;
+    font-size: 0.9em;
 }
 
 /* Section Résultats */
 
-#resultats
+#result
 {
     display: flex;
     flex-direction: row;
@@ -219,7 +239,7 @@ header{
 
 /* Section Hebergement */
 
-#bloc_hebergement{
+#lodging_bloc{
     width: 61%;
     display: flex;
     flex-direction: column;
@@ -228,14 +248,18 @@ header{
     padding: 15px 25px 25px 25px;
 }
 
-#liens_hebergement{
+#lodging_bloc{
+    flex: auto;
+}
+
+#lodging_link{
     display: flex;
     flex-direction: column;
     min-height: 400px;
     gap: 30px;
 }
 
-.ligne_hebergement{
+.lodging_line{
     flex: auto;
     display: flex;
     flex-direction: row;
@@ -244,7 +268,7 @@ header{
     align-items: stretch;
 }
 
-#box_hebergement{
+#lodging_box{
     display: flex;
     flex-direction: column;
     width: 33%;
@@ -253,22 +277,18 @@ header{
     max-height: 200px;
 }
 
-#box_hebergement>img{
+#lodging_box>img{
     height: 70%;
     position: relative;
     max-height: 105px;
     max-width: 231px;
 }
 
-#box_hebergement>p{
+#lodging_box>p{
     height: 30%;
 }
 
-#bloc_hebergement>*{
-    flex: auto;
-}
-
-#bloc_hebergement>button{
+#lodging_bloc>button{
     border: none;
     font-weight: bold;
     font-size: small;
@@ -279,7 +299,7 @@ header{
 
 /*Section popularité */
 
-#bloc_popularite{
+#popularity_bloc{
     width: 32%;
     background-color:#F2F2F2;
     border-radius: 15px;
@@ -289,58 +309,71 @@ header{
 
 /* Section Activités */
 
-#activites
+#activity
 {
     padding: 30px 30px 40px 30px;
 }
 
-#liens_activites{
+#activity_link{
     display: flex;
     flex-direction: column;
 }
 
-#bloc_activites{
+#activity_bloc{
     display: flex;  
     min-height: 400px;
     gap: 35px;
 }
 
-#bloc_activites>*{
+#activity_bloc>*{
     width: 23%;
 }
 
-.sous_titre{
+.sub_title{
     margin-left: 10px;
     font-weight: bold;
     height: 30px;
     line-height: 30px;
 }
 
+/* Activites seul */
+
+.activity_1{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
+}
+
+.activity_1>img{
+    border-radius: 15px 15px 0px 0px;
+    flex-grow: 1;
+}
+
 /* Activites double */
 
-.activites_double{
+.activity_2{
     display: flex;
     flex-direction: column;
     gap: 35px;
+    justify-content: flex-start;
 }
 
-#grande{
+#big{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    justify-content: flex-start;
     height: 61%;
     border-radius: 15px;
     box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479); 
 }
 
-#grande>img{
-    flex: auto;
+#big>img{
     border-radius: 15px 15px 0px 0px;
 }
 
 
-#petite{
+#small{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -349,23 +382,8 @@ header{
     box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479); 
 }
 
-#petite>img{
+#small>img{
     border-radius: 15px 15px 0px 0px;
-}
-
-
-/* Activites seul */
-
-.activites_seul{
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
-}
-
-.activites_seul>img{
-    border-radius: 15px 15px 0px 0px;
-    flex-grow: 1;
 }
 
 /* Footer */

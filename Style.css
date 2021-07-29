@@ -88,11 +88,6 @@ header{
     color: #0065FC;
 }
 
-.signUp:hover{
-    color: #0065FC;
-    border-top: 1px solid #0065FC;
-}
-
 /* Section rechercher */
 
 #search

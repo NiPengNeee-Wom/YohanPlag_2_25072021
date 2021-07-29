@@ -4,6 +4,7 @@
 
 * {
     font-family: 'Raleway', Arial, Verdana, sans-serif;
+    font-size: 15px;
 }
 
 
@@ -11,7 +12,6 @@
 
 body{
     margin: 0;
-    padding: 0;
 }
 
 #main_container{
@@ -204,7 +204,7 @@ header{
     text-align: center;
     background: #DEEBFF;
     left: -2px;
-    border-radius: 100%;;
+    border-radius: 100%;
 }
 
 #info{
@@ -212,20 +212,26 @@ header{
     flex-direction: row;
 }
 
-.fa-info{
-    border: 2px solid #F2F2F2;
-    width: 25px;
-    height: 25px;
-    font-size: 14px;
-    color: #0065FC;
-    text-align: center;
-    border-radius: 100%;
-    margin-right: 15px;
-}
 
 #info_text{
     line-height:36px;
     font-size: 0.9em;
+}
+
+.icon_info{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 1rem;
+    margin-right: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.icon_info i{
+    margin: auto;
+    font-size: .7rem;
+    color: #0065FC;  
 }
 
 /* Section Résultats */
@@ -233,7 +239,6 @@ header{
 #result
 {
     display: flex;
-    flex-direction: row;
     gap: 35px;
     padding: 20px 30px 40px 30px;
     height: 550px;
@@ -278,19 +283,35 @@ header{
 }
 
 .lodging_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 78px;
     width: 100%;
 }
 
-.lodging_info>p{
+#lodging_info_title{
+    line-height: 5px;
+    padding-top: 15px;
     padding-left: 15px;
-    height: 0px;
-    line-height: 20px;
-    padding-bottom: 3px;
+    height: 25px;
+}
+
+#lodging_info_price{
+    padding-left: 15px;
+    line-height: 1px;
+    height: 35px;
+}
+
+.fa-euro-sign{
+    line-height: 1px;
+    font-size: 0.8em;
+    height: 35px;
 }
 
 .lodging_stars{
     padding-left: 15px;
+    padding-bottom: 20px;
     color: #0065FC;
     font-size: 0.9em;
 }
@@ -476,3 +497,5 @@ footer>*{
     display: flex;
     flex-direction: column;
 }
+
+/* Parametre Tablette */

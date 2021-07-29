@@ -322,6 +322,10 @@ header{
     font-size: 0.9em;
 }
 
+#test{
+    color: #F2F2F2;
+}
+
 #lodging_button{
     flex-grow: 1;
     border: hidden;
@@ -517,5 +521,3 @@ footer>*{
 
 /* Parametre Tablette */
 
-
-@media

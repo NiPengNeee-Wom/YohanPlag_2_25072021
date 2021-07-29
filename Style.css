@@ -97,18 +97,9 @@ header{
     padding-left: 30px;
     padding-right: 30px;
 }
-
-#search>p{
-    display: block;
-    height: 5px;
-    line-height: 5px;
-    padding-bottom: 10px;
-}
-
-#search>h1{
-    display: block;
-    height: 0px;
-    line-height: 0px;
+.slogan_reservia{
+    font-weight: bold;
+    font-size: large;
 }
 
 /* Barre de recherche */
@@ -241,7 +232,6 @@ header{
     display: flex;
     gap: 35px;
     padding: 20px 30px 40px 30px;
-    height: 550px;
 }
 
 /* Section Hebergement */
@@ -252,7 +242,6 @@ header{
     background-color:#F2F2F2;
     border-radius: 15px;
     padding: 15px 25px 25px 25px;
-    height: 512px;
 }
 
 #lodging_link{
@@ -260,7 +249,6 @@ header{
     grid-template-columns: 31% 31% 31%;
     grid-template-rows: 47% 47%;
     gap: 25px;
-    height: 400px;
     padding: 0px 0px 20px 0px;
 }
 
@@ -399,7 +387,6 @@ header{
 #activity_link{
     display: flex;
     flex-direction: column;
-    height: 450px;
 }
 
 #activity_bloc{
@@ -409,15 +396,6 @@ header{
     gap: 35px;
     width: 100%;
     height: 100%;
-}
-
-.activity_1{
-    width: 25%;
-    color: black;
-}
-
-.activity_2{
-    width: 25%;;
 }
 
 .activity_2>a{
@@ -435,6 +413,8 @@ header{
 /* Activites seul */
 
 .activity_1{
+    width: 25%;
+    color: black;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -454,6 +434,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 35px;
+    width: 25%;
 }
 
 #big{
@@ -497,6 +478,7 @@ footer
     background-color:#F2F2F2 ;
     padding-left: 30px;
     padding-top: 20px;
+    padding-right: 30px;
 }
 
 Footer>*>a{
@@ -514,4 +496,136 @@ footer>*{
     flex-direction: column;
 }
 
-/* Parametre Tablette Verif*/
+/* Parametre petit ecran */
+
+@media only screen and (max-width: 1160px){
+    #result{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+        padding: 20px 30px 40px 30px;
+    }
+
+    #lodging_bloc{
+        flex: 2;
+        display: grid;
+        background-color:#F2F2F2;
+        border-radius: 15px;
+        padding: 15px 25px 25px 25px;
+    }
+    #popularity_bloc{
+        flex:1;
+        background-color:#F2F2F2;
+        border-radius: 20px;
+        padding: 15px 30px 25px 30px; 
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        height: 512px;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-wrap: wrap;
+        background-color:#F2F2F2 ;
+        padding-left: 30px;
+        padding-top: 20px;
+        padding-right: 30px;
+    }
+}
+
+/* Parametre tablette à revoir pour partie activité  */ 
+
+@media only screen and (max-width: 768px){
+
+    /* hebergement */
+
+    #lodging_link{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    /* header */
+
+}
+
+/* Parametre mobile */
+
+@media only screen and (max-width: 480px){
+
+    /* activité */
+
+    #activity_bloc{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .activity_1{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
+        width: 100%;
+        height: 25%;
+    }
+
+    .activity_1>img{
+        border-radius: 15px 15px 0px 0px;
+        flex-grow: 1;
+        width: 100%;
+        object-fit: cover;
+        height: 50px;
+    }
+
+    .activity_2{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        width: 100%;
+        height: 50%;
+    }
+
+    #big{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 15px;
+        box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
+    }
+
+    #small{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border-radius: 15px;
+        box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479); 
+    }
+
+    #big>img{
+        border-radius: 15px 15px 0px 0px;
+        height: 50px;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #small>img{
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color:#F2F2F2 ;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+}

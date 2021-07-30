@@ -48,7 +48,7 @@ header{
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 #logo{
@@ -86,6 +86,12 @@ header{
     font-weight: bold;
     flex: auto;
     color: #0065FC;
+}
+
+/* Nav link mobile */
+
+.nav_link_mobile{
+    display: none;
 }
 
 /* Section rechercher */
@@ -137,12 +143,16 @@ header{
     padding-left: 10px;
 }
 
-#search_bar>button{
+.button_all{
     border: hidden;
     flex:auto;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
     color: white;
+}
+
+.button_mobile{
+    display: none;
 }
 
 /* section filtre */
@@ -156,6 +166,8 @@ header{
     margin-bottom: 20px;
     padding-top: inherit;
     padding-right: 20px;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 #filter_bloc{
@@ -552,6 +564,33 @@ footer>*{
 
 @media only screen and (max-width: 768px){
 
+    /* header */
+
+    .nav_link{
+        display: none;
+    }
+
+    .nav_link_mobile{
+        display: unset;
+        display: flex;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav_link_mobile>a{
+        padding: 30px 30px 30px 30px;
+        text-decoration: none;
+        text-align: center;
+        font-style: normal;
+        flex: auto;
+        color: black;
+    }
+
+    .nav_link_mobile>a:hover{
+        color: #0065FC;
+        border-bottom: 1px solid #0065FC;
+    }
+
     /* hebergement */
 
     #lodging_link{
@@ -573,8 +612,7 @@ footer>*{
 
     #activity_bloc{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: column;;
     }
 
     .activity_1{
@@ -585,6 +623,7 @@ footer>*{
         box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
         width: 100%;
         height: 25%;
+        height: 200px;
     }
 
     .activity_1>img{
@@ -609,6 +648,7 @@ footer>*{
         justify-content: flex-end;
         border-radius: 15px;
         box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
+        height: 200px;
     }
 
     #small{
@@ -616,12 +656,12 @@ footer>*{
         flex-direction: column;
         justify-content: flex-end;
         border-radius: 15px;
-        box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479); 
+        box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
+        height: 200px; 
     }
 
     #big>img{
         border-radius: 15px 15px 0px 0px;
-        height: 50px;
         width: 100%;
         object-fit: cover;
     }
@@ -629,7 +669,7 @@ footer>*{
     #small>img{
         border-radius: 15px 15px 0px 0px;
         width: 100%;
-        height: 50px;
+        height: 75%;
         object-fit: cover;
     }
 
@@ -653,7 +693,65 @@ footer>*{
 
 @media only screen and (max-width: 480px){
 
+    /* page entiere */
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 30px;
+    }
+
+    #search{
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #result{
+        display: flex;
+        gap: 35px;
+        padding: 20px 15px 40px 15px;
+        }
+    
+    footer{
+        display: flex;
+        background-color:#F2F2F2 ;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+
+    #activity{
+        padding: 0px 15px 30px 15px;
+        margin-bottom: 30px;
+    }
+
     /* recherche */
+
+    #search_bar{
+        display: flex;
+        height: 40px;
+        width: 100%;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+
+    .button_all{
+        display: none;
+    }
+
+    .button_mobile{
+        display: unset;
+        border: hidden;
+        flex:auto;
+        border-radius: 0px 15px 15px 0px;
+        background-color: #0065FC;
+        color: white;
+    }
 
     /* filter */
 
@@ -683,6 +781,7 @@ footer>*{
         height: 21px;
         margin-left: 20px;
         margin-right: 20px;
+        padding-left: 5px;
     }
 
     #lodging_button{

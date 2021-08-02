@@ -45,7 +45,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 30px 30px 30px;
+    padding: 0px 30px 20px 30px;
 }
 
 #logo{
@@ -113,7 +113,7 @@ header{
     height: 40px;
     width: 350px;
     border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #gps{
@@ -177,7 +177,7 @@ header{
     display: flex;
     justify-content: space-between;
     border-radius: 200px;
-    border: 3px #F2F2F2 solid;
+    border: 3px #f2f2f2 solid;
     cursor: pointer;
     height: 40px;
     position: relative;
@@ -425,11 +425,11 @@ header{
 }
 
 .sub_title{
-    margin-left: 10px;
+    margin-left: 15px;
     font-weight: bold;
-    height: 30px;
-    line-height: 15px;
-    padding-top: 5px;
+    max-height: 20px;
+    min-height: 20px;
+    line-height: 20px;
 }
 
 /* Activites seul */
@@ -470,7 +470,7 @@ header{
 
 #big>img{
     border-radius: 15px 15px 0px 0px;
-    height: 155px;
+    height: 167px;
     width: 100%;
     object-fit: cover;
 }
@@ -488,7 +488,7 @@ header{
 #small>img{
     border-radius: 15px 15px 0px 0px;
     width: 100%;
-    height: 81.5px;
+    height: 93.5px;
     object-fit: cover;
 }
 
@@ -498,9 +498,7 @@ footer
 {
     display: flex;
     background-color:#F2F2F2 ;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-right: 30px;
+    padding: 20px 30px 30px 30px;
 }
 
 Footer>*>a{
@@ -590,6 +588,8 @@ footer>*{
         display: flex;
         padding-left: 15px;
         padding-right: 15px;
+        margin-bottom: 15px;
+        height: 65px;
     }
 
     .nav_link_mobile>a{
@@ -599,11 +599,13 @@ footer>*{
         font-style: normal;
         flex: auto;
         color: black;
+        border-bottom: 2px solid #F2F2F2;
+        width: 50%;
     }
 
     .nav_link_mobile>a:hover{
         color: #0065FC;
-        border-bottom: 1px solid #0065FC;
+        border-bottom: 2px solid #0065FC;
     }
 
     /* hebergement */
@@ -678,13 +680,14 @@ footer>*{
     #big>img{
         border-radius: 15px 15px 0px 0px;
         width: 100%;
+        height: 148px;
         object-fit: cover;
     }
     
     #small>img{
         border-radius: 15px 15px 0px 0px;
         width: 100%;
-        height: 75%;
+        height: 148px;
         object-fit: cover;
     }
 
@@ -753,6 +756,7 @@ footer>*{
         border-radius: 15px;
         margin-bottom: 20px;
         border: 1px solid #f2f2f2;
+        margin-top: 10px;
     }
 
     #gps{
@@ -815,8 +819,6 @@ footer>*{
         border: hidden;
         text-align: start;
         font-weight: bold;
-        margin-left: 20px;
-        margin-right: 20px;
         background-color: white;
     }
 

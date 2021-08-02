@@ -284,7 +284,6 @@ header{
     border-radius: 15px 15px 0px 0px;
     padding: 2% 2% 2% 2%;
     height: 110px;
-    width: 95%;
     object-fit: cover;
 }
 
@@ -617,6 +616,7 @@ footer>*{
         color: black;
         border-bottom: 2px solid #F2F2F2;
         width: 50%;
+        margin: 0px -20px 0px -20px;
     }
 
     .nav_link_mobile>a:hover{

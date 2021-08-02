@@ -84,6 +84,7 @@ header{
     font-weight: bold;
     flex: auto;
     color: #0065FC;
+    border-top: 1px solid transparent;
 }
 
 /* Nav link mobile */
@@ -582,7 +583,11 @@ footer>*{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 0px 30px 0px 30px;
+        padding: 20px 30px 0px 30px;
+    }
+
+    #logo{
+        padding-top: 0px;
     }
 
     .nav_bloc{
@@ -590,12 +595,13 @@ footer>*{
     }
 
     .signUp{
-        padding: 58px 30px 0px 30px;
+        padding: 18px 30px 0px 30px;
         text-decoration: none;
         text-align: center;
         font-weight: bold;
         flex: auto;
         color: #0065FC;
+        border-top: 1px solid transparent;
     }
 
     

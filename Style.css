@@ -427,9 +427,10 @@ header{
 .sub_title{
     margin-left: 15px;
     font-weight: bold;
+    font-size: 0.8em;
     max-height: 20px;
     min-height: 20px;
-    line-height: 20px;
+    line-height: 15px;
 }
 
 /* Activites seul */

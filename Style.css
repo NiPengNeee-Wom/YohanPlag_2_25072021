@@ -122,7 +122,7 @@ header{
     background-color: #F2F2F2;
     position: relative;
     padding-right: 10px;
-    width: 15px;
+    width: 25px;
 }
 
 .fa-map-marker-alt{
@@ -754,6 +754,14 @@ footer>*{
         margin-bottom: 20px;
     }
 
+    #gps{
+        border-radius: 15px 0px 0px 15px;
+        background-color: #F2F2F2;
+        padding-right: 10px;
+        max-width: 35px;
+        min-width: 35px;
+    }
+
     .button_all{
         display: none;
     }
@@ -761,7 +769,8 @@ footer>*{
     .button_mobile{
         display: unset;
         border: hidden;
-        flex:auto;
+        width: 40px;
+        min-width: 40px;
         border-radius: 0px 15px 15px 0px;
         background-color: #0065FC;
         color: white;

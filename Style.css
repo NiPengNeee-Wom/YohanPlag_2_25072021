@@ -69,6 +69,7 @@ header{
     font-style: normal;
     flex: auto;
     color: black;
+    border-top: 1px solid transparent;
 }
 
 .nav_link:hover{

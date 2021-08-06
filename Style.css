@@ -153,11 +153,13 @@ header{
     flex:auto;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
-    color: white;
+    color: white; 
+    cursor: pointer;
 }
 
 .button_mobile{
-    display: none;
+    display: none;  
+    cursor: pointer;
 }
 
 /* section filtre */

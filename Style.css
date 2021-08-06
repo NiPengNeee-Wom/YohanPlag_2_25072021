@@ -297,14 +297,14 @@ header{
     width: 100%;
 }
 
-#lodging_info_title>h3{
+.lodging_info_title>h3{
     margin-bottom: 5px;
     margin-left: 15px;
     margin-top: 5px;
     font-size: 0.9em;
 }
 
-#lodging_info_price>p{
+.lodging_info_price>p{
     margin-bottom: 0px;
     margin-top: 0px;
     margin-left: 15px;
@@ -401,7 +401,7 @@ header{
     font-size: 0.9em;
 }
 
-#grey_stars{
+.grey_stars{
     border: none;
     color: rgba(128, 128, 128, 0.568);
 }
@@ -468,7 +468,7 @@ header{
     width: 25%;
 }
 
-#big{
+.big{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -477,7 +477,7 @@ header{
     box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479);
 }
 
-#big>img{
+.big>img{
     border-radius: 15px 15px 0px 0px;
     height: 173px;
     width: 100%;
@@ -485,7 +485,7 @@ header{
 }
 
 
-#small{
+.small{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -494,7 +494,7 @@ header{
     box-shadow:  0px 2px 2px rgba(128, 128, 128, 0.479); 
 }
 
-#small>img{
+.small>img{
     border-radius: 15px 15px 0px 0px;
     width: 100%;
     height: 99.5px;
@@ -684,7 +684,7 @@ footer>*{
         height: 50%;
     }
 
-    #big{
+    .big{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -693,7 +693,7 @@ footer>*{
         height: 200px;
     }
 
-    #small{
+    .small{
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -702,14 +702,14 @@ footer>*{
         height: 200px; 
     }
 
-    #big>img{
+    .big>img{
         border-radius: 15px 15px 0px 0px;
         width: 100%;
         height: 154px;
         object-fit: cover;
     }
     
-    #small>img{
+    .small>img{
         border-radius: 15px 15px 0px 0px;
         width: 100%;
         height: 154px;

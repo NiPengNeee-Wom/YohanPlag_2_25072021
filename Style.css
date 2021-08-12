@@ -43,11 +43,11 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 30px 20px 30px;
+    padding: 0px 30px 10px 30px;
 }
 
 #logo{
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 #nav{
@@ -83,12 +83,6 @@ header{
     flex: auto;
     color: #0065FC;
     border-top: 1px solid transparent;
-}
-
-/* Nav link mobile */
-
-.nav_link_mobile{
-    display: none;
 }
 
 /* Section rechercher */
@@ -595,10 +589,6 @@ footer>*{
         padding-top: 0px;
     }
 
-    .nav_bloc{
-        display: none;
-    }
-
     .signUp{
         padding: 18px 30px 0px 30px;
         text-decoration: none;
@@ -607,33 +597,6 @@ footer>*{
         flex: auto;
         color: #0065FC;
         border-top: 1px solid transparent;
-    }
-
-    
-    .nav_link_mobile{
-        display: unset;
-        display: flex;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-bottom: 15px;
-        height: 65px;
-    }
-
-    .nav_link_mobile>a{
-        padding: 30px 30px 30px 30px;
-        text-decoration: none;
-        text-align: center;
-        font-style: normal;
-        flex: auto;
-        color: black;
-        border-bottom: 2px solid #F2F2F2;
-        width: 50%;
-        margin: 0px -20px 0px -20px;
-    }
-
-    .nav_link_mobile>a:hover{
-        color: #0065FC;
-        border-bottom: 2px solid #0065FC;
     }
 
     /* hebergement */

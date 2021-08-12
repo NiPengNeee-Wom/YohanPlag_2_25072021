@@ -723,6 +723,14 @@ footer>*{
         padding-top: 41px;
     }
 
+    .nav_link_1{
+        margin-left: -15px;
+    }
+
+    .nav_link_2{
+        margin-right: -15px;
+    }
+
     /* page entiere */
 
     #search{

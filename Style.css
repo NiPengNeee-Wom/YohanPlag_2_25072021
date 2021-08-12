@@ -40,33 +40,27 @@ a{
 /* Header */
 
 header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 0px 30px 10px 30px;
 }
 
 #logo{
-    padding-top: 15px;
+    padding-top: 25px;
+    order: 1;
 }
 
 #nav{
-    width: 25%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.nav_bloc{
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% auto auto auto;
 }
 
 .nav_link{
-    padding: 30px 30px 0px 30px;
+    padding: 35px 30px 0px 30px;
     text-decoration: none;
     text-align: center;
     font-style: normal;
     flex: auto;
     color: black;
+    order: 2;
     border-top: 1px solid transparent;
 }
 
@@ -76,13 +70,14 @@ header{
 }
 
 .signUp{
-    padding: 30px 30px 0px 30px;
+    padding: 35px 30px 0px 30px;
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     flex: auto;
     color: #0065FC;
     border-top: 1px solid transparent;
+    order: 3;
 }
 
 /* Section rechercher */
@@ -527,6 +522,42 @@ footer>*{
 
 @media only screen and (max-width: 1160px){
 
+    /* header */
+
+    #nav{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    #logo{
+        order: 1;
+    }
+
+    .signUp{
+        text-align: end;
+        order: 2;
+        padding-right: 15px;
+    }
+
+    .nav_link{
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 15px;
+        order: 3;
+    }
+
+    .nav_link_1{
+        margin-left: -30px;
+    }
+
+    .nav_link_2{
+        margin-right: -30px;
+    }
+
+    .nav_link:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
     /* reslutats */
 
     #result{
@@ -575,29 +606,6 @@ footer>*{
 /* Parametre tablette à revoir pour partie activité  */ 
 
 @media only screen and (max-width: 768px){
-
-    /* header */
-
-    header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 20px 30px 0px 30px;
-    }
-
-    #logo{
-        padding-top: 0px;
-    }
-
-    .signUp{
-        padding: 18px 30px 0px 30px;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-        flex: auto;
-        color: #0065FC;
-        border-top: 1px solid transparent;
-    }
 
     /* hebergement */
 
@@ -703,14 +711,17 @@ footer>*{
 
 @media only screen and (max-width: 480px){
 
-    /* page entiere */
+    /* header */
 
     header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px 15px 0px 15px
+        padding: 0px 15px 10px 15px;
     }
+
+    .signUp{
+        padding-right: 0px;
+    }
+
+    /* page entiere */
 
     #search{
         display: flex;
